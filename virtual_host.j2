@@ -1,0 +1,12 @@
+<Directory /path/to/Directory>
+    Require all granted
+    AllowOverride None
+</Directory>
+
+<VirtualHost _default_:80>
+    DocumentRoot /path/to/Directory
+    ServerName  name.of.site
+    ServerAdmin  email@ofserveradmin
+    ErrorLog  "logs/site1_error_log"
+    CustomLog "logs/site_access_log" combined
+</VirtualHost>
